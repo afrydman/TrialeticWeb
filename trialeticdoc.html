@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TrialEtic Doc - Sistema de Gestión Documental CFR 21 Part 11 | AuditTrail</title>
+
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+    <meta name="description" content="Sistema integral de gestión documental diseñado para cumplir con CFR 21 Part 11 de la FDA. Control de versiones, auditoría completa y gestión de permisos para ensayos clínicos.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="gestión documental, CFR 21 Part 11, FDA, ensayos clínicos, auditoría, control de versiones, compliance, GCP">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="TrialEtic Doc - Sistema de Gestión Documental CFR 21 Part 11">
+    <meta property="og:description" content="Sistema empresarial para gestión documental con compliance regulatorio FDA">
+    <meta property="og:image" content="https://trialetic.com/images/logo/trialetic-newLogo-nb.png">
+    <meta property="og:url" content="https://trialetic.com/trialeticdoc.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TrialEtic Doc - Sistema de Gestión Documental">
+    <meta name="twitter:description" content="Plataforma de gestión documental con compliance CFR 21 Part 11">
+    <meta name="twitter:image" content="https://trialetic.com/images/logo/trialetic-newLogo-nb.png">
+    <meta name="author" content="TrialEtic">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://trialetic.com/trialeticdoc.html">
+    <meta name="robots" content="index, follow">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css?v=1.0.2">
+    <script src="https://kit.fontawesome.com/926ed326e3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/logo/favicon.ico" />
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css?v=2345" type="text/css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css">
+    <link rel="stylesheet" href="css/newstyle.css?v=2351" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+    <style>
+        /* Hero Section Styles */
+        #home {
+            background: linear-gradient(135deg, #0165f2 0%, #003d99 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        #home::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,224L60,208C120,192,240,160,360,165.3C480,171,600,213,720,224C840,235,960,213,1080,186.7C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: bottom;
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .doc-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #fff 0%, #e0e7ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+        
+        .hero-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255,255,255,0.9);
+            font-size: 1.1rem;
+        }
+        
+        .hero-feature-item i {
+            color: #ffd700;
+        }
+        
+        .hero-buttons {
+            margin-top: 3rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-hero {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-hero-primary {
+            background: white;
+            color: #0165f2;
+        }
+        
+        .btn-hero-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            color: #003d99;
+        }
+        
+        .btn-hero-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-hero-secondary:hover {
+            background: white;
+            color: #0165f2;
+        }
+        
+        /* New Highlight Section Styles */
+        .highlight-section-new {
+            background: white;
+            padding: 4rem 0;
+            position: relative;
+        }
+        
+        .highlight-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            align-items: stretch;
+        }
+        
+        .highlight-card {
+            background: linear-gradient(135deg, #0165f2 0%, #003d99 100%);
+            border-radius: 20px;
+            padding: 2.5rem;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .highlight-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .highlight-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .highlight-icon i {
+            font-size: 1.8rem;
+            color: white;
+        }
+        
+        .highlight-card h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .highlight-card p {
+            color: rgba(255,255,255,0.9);
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .highlight-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            background: linear-gradient(135deg, #0165f2 0%, #003d99 100%);
+            transform: translateY(-5px);
+        }
+        
+        .stat-item:hover .stat-number,
+        .stat-item:hover .stat-label {
+            color: white;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #0165f2;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Original styles for other sections */
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        .feature-card h3 {
+            color: #404b67;
+            margin-bottom: 1rem;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 0.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .tech-badge {
+            background: #4264EA;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .structure-tree {
+            background: #f8f9fa;
+            border-left: 3px solid #4264EA;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: monospace;
+        }
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .compliance-item {
+            background: #e8f4f8;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Header white background styles for trialeticdoc page */
+        .navbar-custom {
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-custom .navbar-nav li a {
+            color: #404b67 !important;
+        }
+
+        .navbar-custom .navbar-toggler {
+            color: #404b67 !important;
+            border-color: #404b67;
+        }
+
+        .navbar-custom .navbar-toggler i {
+            color: #404b67 !important;
+        }
+    </style>
+</head>
+
+<body class="white-bg-page">
+    <!-- START NAVBAR -->
+    <div id="navbar">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark" id="main-menu">
+            <div class="container">
+                <!-- LOGO -->
+                <div id="nLogo">
+                    <a class="navbar-brand logo">
+                        <img src="images/logo/trialetic-newLogo-nb.png" class="logo-light" alt="" height="70">
+                        <span class="sono-title white logo-light"> </span>
+                        <img src="images/logo/trialetic-newLogo-nb.png" class="logo-dark" alt="" height="70">
+                        <span class="sono-title black logo-dark"></span>
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="" style="" id="navbarCollapse">
+                    <ul class="navbar-nav navbar-center" id="navbar-navlist">
+                        <li class="nav-item">
+                            <a data-scroll target="_blank" style="color: #404b67 !important;" href="https://api.whatsapp.com/send/?phone=5491130218600&text=Hi&type=phone_number&app_absent=0" class="nav-link searchct">Buscar ensayos Clinicos</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a data-scroll href="index.html" class="nav-link" style="color: #404b67 !important;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll href="index.html#news" id="nav-news" style="color: #404b67 !important;" class="nav-link">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll href="us.html" id="nav-news" style="color: #404b67 !important;" class="nav-link">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll href="us.html#other-projects" style="color: #404b67 !important;" id="nav-news" class="nav-link">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll href="#contact" id="nav-contact" style="color: #404b67 !important;" class="nav-link">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" style="color: #404b67 !important;" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span id="current-lang">EN</span>
+                            </a>
+                            <ul id="dropLang" class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item aLang" style="color: #404b67 !important;" href="#" data-lang="es">ES</a></li>
+                                <li><a class="dropdown-item aLang" style="color: #404b67 !important;" href="#" data-lang="en">EN</a></li>
+                                <li><a class="dropdown-item aLang" style="color: #404b67 !important;" href="#" data-lang="pt">PT</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <ul class="navbar-nav navbar-center">
+                                <a href="https://x.com/Trialetic_" style="color:black !important;" target="_blank" class="iconSocial"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/trialetic-419315348/" style="color:black !important;" class="iconSocial" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- END NAVBAR -->
+
+    <!-- START HOME -->
+    <section id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center hero-content">
+                    <div class="doc-badge">
+                        <i class="fas fa-shield-alt"></i> CFR 21 Part 11 Compliant
+                    </div>
+                    <h1 class="hero-title">
+                        TRIALETIC DOC
+                    </h1>
+                    <p class="hero-subtitle">
+                        Sistema de Gestión Documental con Control de Cambios y Conservación Post-Estudio
+                    </p>
+                    
+                   
+
+                    <div class="hero-buttons">
+                        <a href="#features" class="btn-hero btn-hero-primary">
+                            <i class="fas fa-rocket"></i> Ver Características
+                        </a>
+                        <a href="#contact" class="btn-hero btn-hero-secondary">
+                            <i class="fas fa-envelope"></i> Solicitar Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHT SECTION -->
+    <section class="highlight-section-new">
+        <div class="highlight-content">
+            <div class="highlight-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Regulaciones FDA</h3>
+                    <p>Sistema integral diseñado específicamente para cumplir con las regulaciones CFR 21 Part 11 de la FDA, garantizando compliance total para la industria farmacéutica.</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Gestión Avanzada</h3>
+                    <p>AuditTrail proporciona capacidades avanzadas de manejo de documentos, control de versiones y auditoría completa con las mejores prácticas de seguridad empresarial.</p>
+                </div>
+                
+        
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-archive"></i>
+                    </div>
+                    <h3>Retención de Archivos</h3>
+                    <p>El sistema conserva todos los archivos e información relacionada incluso después de la finalización del estudio, respetando los períodos de retención establecidos por el cliente o las normativas vigentes.</p>
+                </div>
+            </div>
+
+         
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="section overflow-hidden" id="features">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>Características Principales</h1>
+                    <p class="subtitle">Sistema completo de gestión documental para ensayos clínicos</p>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h3><i class="fas fa-tasks"></i> Sistema Interno de Tareas y Notificaciones</h3>
+                        <ul class="feature-list">
+                            <li>Notificaciones automáticas de vencimiento de archivos</li>
+                            <li>Sistema de alertas personalizables por usuario y rol</li>
+                            <li>Dashboard de tareas pendientes y documentos próximos a vencer</li>
+                            <li>Gestión de recordatorios con múltiples niveles de escalación</li>
+                            <li>Reportes de cumplimiento y seguimiento de deadlines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h3><i class="fas fa-folder-tree"></i> Gestión Documental Avanzada</h3>
+                        <ul class="feature-list">
+                            <li>El sistema presenta una visualización jerárquica de archivos y carpetas, replicando la experiencia de exploradores nativos como el Explorador de Archivos de Windows o el Finder de macOS</li>
+                            <li>Breadcrumb Completo con navegación clickeable</li>
+                            <li>Búsqueda en Tiempo Real con filtrado dinámico</li>
+                            <li>Drag & Drop para carga de archivos</li>
+                            <li>Vista Previa de Archivos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h3><i class="fas fa-code-branch"></i> Control de Versiones Empresarial</h3>
+                        <ul class="feature-list">
+                            <li>Versiones Incrementales automáticas (v1, v2, v3...)</li>
+                            <li>Historial Completo con acceso a versiones anteriores</li>
+                            <li>Switching dinámico entre versiones sin recargar</li>
+                            <li>Metadatos completos por cada versión</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h3><i class="fas fa-user-shield"></i> Sistema de Permisos por Roles</h3>
+                        <ul class="feature-list">
+                            <li>Permisos granulares</li>
+                            <li>Permisos basados en roles organizacionales</li>
+                            <li>Herencia automática de permisos de carpetas</li>
+                            <li>Matriz visual para gestión de permisos</li>
+                            <li>Protección especial para carpetas raíz</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUDIT SECTION -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Sistema de Auditoría CFR 21 Part 11</h2>
+            <p class="section-description">
+                Trazabilidad completa y registro inmutable de todas las operaciones
+            </p>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="icon"><i class="fas fa-history"></i></div>
+                    <div>
+                        <h3>Auditoría a Nivel de Archivo</h3>
+                        <p>Historial completo de todas las acciones por archivo con filtrado por eventos y exportación CSV. Modal integrado en el visualizador de PDF.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <div>
+                        <h3>Auditoría del Sistema Completo</h3>
+                        <p>Página dedicada /Audit con interface profesional, filtrado avanzado por múltiples criterios y búsqueda en tiempo real.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon"><i class="fas fa-clipboard-list"></i></div>
+                    <div>
+                        <h3>Registro de Eventos Completo</h3>
+                        <p>Captura de login/logout, carga y descarga de archivos, modificaciones, cambios de permisos y todas las operaciones del sistema.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon"><i class="fas fa-fingerprint"></i></div>
+                    <div>
+                        <h3>Metadatos Completos</h3>
+                        <p>Usuario, IP, fecha/hora, duración, resultado. Tracking completo de cambios con valores anterior/nuevo en formato JSON.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon"><i class="fas fa-file-export"></i></div>
+                    <div>
+                        <h3>Exportación de Auditoría</h3>
+                        <p>Capacidad de exportar registros de auditoría en formato CSV para reguladores y auditorías externas.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon"><i class="fas fa-link"></i></div>
+                    <div>
+                        <h3>Cadena de Custodia</h3>
+                        <p>Trazabilidad completa para auditorías regulatorias con cadena de custodia de todos los documentos críticos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRUCTURE SECTION -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Estructura Organizacional de Documentos</h2>
+                    <p>Sistema preconfigurado con estructura especializada para ensayos clínicos según estándares GCP.</p>
+                    
+                    <div class="structure-tree">
+                        <strong>14 Categorías Principales:</strong><br>
+                        📁 01. Regulatory and Administrative Documents<br>
+                        📁 02. Protocol and Protocol-Related Documents<br>
+                        📁 03. Investigational Products<br>
+                        📁 04. Safety Reporting<br>
+                        📁 05. Site Management and Monitoring<br>
+                        📁 06. Data Management and Statistics<br>
+                        📁 07. Medical and Safety Monitoring<br>
+                        📁 08. Quality Assurance and Audits<br>
+                        📁 09. Ethics and Regulatory Submissions<br>
+                        📁 10. Study Operations and Training<br>
+                        📁 11. Financial and Contract Management<br>
+                        📁 12. Communication and Correspondence<br>
+                        📁 13. Study Closeout and Archiving<br>
+                        📁 14. Post-Study Activities
+                    </div>
+                    
+                    </div>
+
+                <div class="col-lg-6">
+                    <h2>Interfaz de Usuario Profesional</h2>
+                    
+                    <div class="feature-card">
+                        <h4>Diseño Responsivo</h4>
+                        <p>Diseño adaptable a desktop, tablet y móvil. Tema profesional con colores corporativos y diseño limpio.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Componentes Avanzados</h4>
+                        <p>Tablas interactivas con ordenamiento, filtrado y paginación. Modales dinámicos con carga vía AJAX. Tooltips informativos y notificaciones toast.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Visualizador de archivos en linea</h4>
+                        <p>Visualizador integrado de archivos PDF,Word, Excel e Imagenes con navegación de versiones, sidebar informativo con metadatos, controles de zoom y búsqueda, y descarga directa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPLIANCE SECTION -->
+    <section class="section" id="compliance" style="display:none;">
+        <div class="container">
+            <h2 class="section-title text-center">Características de Compliance</h2>
+            
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h3>CFR 21 Part 11 Compliance</h3>
+                    <p>Sistema diseñado específicamente para cumplir con las regulaciones de la FDA</p>
+                </div>
+            </div>
+
+            <div class="compliance-grid">
+                <div class="compliance-item">
+                    <i class="fas fa-check-circle fa-2x" style="color: #28a745;"></i>
+                    <h5 class="mt-2">Registros Auditables</h5>
+                    <p>Todos los eventos registrados inmutablemente</p>
+                </div>
+                <div class="compliance-item">
+                    <i class="fas fa-check-circle fa-2x" style="color: #28a745;"></i>
+                    <h5 class="mt-2">Firma Electrónica</h5>
+                    <p>Framework preparado para implementación</p>
+                </div>
+                <div class="compliance-item">
+                    <i class="fas fa-check-circle fa-2x" style="color: #28a745;"></i>
+                    <h5 class="mt-2">Trazabilidad Completa</h5>
+                    <p>Cadena de custodia de documentos</p>
+                </div>
+                <div class="compliance-item">
+                    <i class="fas fa-check-circle fa-2x" style="color: #28a745;"></i>
+                    <h5 class="mt-2">Controles de Acceso</h5>
+                    <p>Sistema robusto de permisos por roles</p>
+                </div>
+                <div class="compliance-item">
+                    <i class="fas fa-check-circle fa-2x" style="color: #28a745;"></i>
+                    <h5 class="mt-2">Integridad de Datos</h5>
+                    <p>Checksums y validación de archivos</p>
+                </div>
+                <div class="compliance-item">
+                    <i class="fas fa-check-circle fa-2x" style="color: #28a745;"></i>
+                    <h5 class="mt-2">Retención de Registros</h5>
+                    <p>Soft delete mantiene historial completo</p>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-12 text-center">
+                    <h3>Estándares Cumplidos</h3>
+                    <div class="tech-stack justify-content-center mt-3">
+                        <span class="tech-badge">FDA CFR 21 Part 11</span>
+                       
+                        <span class="tech-badge">GCP Guidelines</span>
+                        <span class="tech-badge">GDPR Compliance</span>
+                        <span class="tech-badge">SOC 2 Type II</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- USE CASES SECTION -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Casos de Uso Principales</h2>
+            
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-microscope fa-3x mb-3" style="color: #4264EA;"></i>
+                        <h4>Investigadores</h4>
+                        <p>Cargar protocolos, versionar documentos, revisar versiones anteriores y descargar para revisión offline.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-user-check fa-3x mb-3" style="color: #4264EA;"></i>
+                        <h4>Auditores/QA</h4>
+                        <p>Revisar trazas completas, filtrar eventos de auditoría, exportar registros y verificar cadena de custodia.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-user-cog fa-3x mb-3" style="color: #4264EA;"></i>
+                        <h4>Administradores</h4>
+                        <p>Gestionar permisos, monitorear actividad, configurar estructura de carpetas y mantener compliance.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-balance-scale fa-3x mb-3" style="color: #4264EA;"></i>
+                        <h4>Reguladores/FDA</h4>
+                        <p>Acceder a registros inmutables, verificar trazabilidad, revisar controles y validar compliance CFR 21.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-wrapper">
+        <div class="cta-container">
+            <h2>¿Listo para implementar un sistema de gestión documental con compliance regulatorio?</h2>
+            <div class="cta-actions">
+                <a href="#contact" class="btn btn-primary btn-lg mt-3">Solicitar Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section-section" id="contact">
+        <div class="contact-section">
+            <h2 class="contact-title">Contacto</h2>
+            
+            <div class="contact-container" style="margin-top: 45px;">
+                <!-- Left Info -->
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Zabala 2836, CP1426, CABA, Argentina</p>
+                    <p><i class="fas fa-phone"></i> +54 9 11 3603-6824</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://x.com/Trialetic_" target="_blank" class="iconSocial"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/trialetic-419315348/" class="iconSocial" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Right Form -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <input type="text" id="name" name="name" placeholder="Nombre*" required>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email*" required>
+                    </div>
+                    
+                    <input type="text" id="subject" name="subject" placeholder="Asunto">
+                    <textarea name="message" id="message" rows="6" placeholder="Escriba su mensaje*" required></textarea>
+                    
+                    <a href="##" id="sendForm" onclick="return SendContactForm();">Enviar!</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>TrialEtic © 2025 – Designed by <a href="https://rewritehealthsolutions.com" target="_blank">ReWrite Health Solutions</a></p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/custom.js?v=2346"></script>
+    <script src="js/bootstrap.bundle.min.js?v=2345"></script>
+    <script src="js/smooth-scroll.polyfills.min.js?v=2345"></script>
+    <script src="js/gumshoe.polyfills.min.js?v=2345"></script>
+    <script src="js/unicons.js?v=2345"></script>
+    <script src="js/app.js?v=2346"></script>
+
+    <a href="https://wa.me/+5491136036824" target="_blank" class="whatsapp-button" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>
