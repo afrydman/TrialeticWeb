@@ -1,0 +1,103 @@
+{
+  "nav": {
+ 
+    "news": "News",
+    "contact": "Contact",
+
+    "search": "Search Clinical Trials",
+    "solutions": "solutions"	
+  },
+
+"home": {
+    "title": "Find the most suitable clinical trial for your patient and easily refer them to any center.",
+    "t1": "We connect oncologists and patients with researchers in a simple and effective way.",
+    "t2": "One of the main barriers explaining the low participation in oncology clinical trials in our country and region lies in the limited connection between doctors, researchers, and patients."
+  },
+  "features": {
+  "title": "How does our ChatBot work?",
+  "description": "Our ChatBot is the first free mobile solution developed by and for oncologists for the personalized search of clinical trials and the direct referral of patients to research centers in Argentina.",
+  "featurescardtitle1": "Personalized, efficient, and accurate search of active clinical trials",
+  "featurescarddescription1": "We facilitate the search for clinical trials by providing meticulously reviewed, organized, and categorized data according to medical criteria.",
+  "featurescardtitle2": "Validated and realtime updated information on centers with active recruitment",
+  "featurescarddescription2": "We regularly validate and verify the status of each clinical trial through various public and private information sources.",
+  "featurescardtitle3": "Direct patient referral",
+  "featurescarddescription3": "Our system offers physicians who select a clinical trial the possibility to contact and refer the patient to the research center quickly and without intermediaries, connecting directly with the investigators.",
+  "featurescarddescription4": "Oncology clinical trials <br/> with daily updates",
+  "featurescarddescription5": "Referral/Randomization <br/> ratio",
+  "featurescarddescription6": "Monthly searches <br/> only in Argentina",
+  "featurescarddescription7": "Centers in our <br/> referral network"
+  },
+  "mission": {
+    "title": "OUR MISSION",
+  "description": "To strengthen the oncology clinical trial ecosystem in Argentina",
+     "description2": "Democratize patient access to oncology clinical trials",   
+  
+  "missioncardtitle1": "Network of leading oncologists",
+  "missioncarddescription1": "Thanks to our network of investigator oncologists, we know precisely which centers are recruiting. This allows you to choose the most suitable center to refer your patient.",
+  
+  "missioncardtitle2": "A simple solution",
+  "missioncarddescription2": "A simple and fast platform developed by oncologists for oncologists, because we share the same needs.",
+  
+  "missioncardtitle3": "Direct contact",
+  "missioncarddescription3": "We offer the opportunity to contact the investigators of each center directly, without intermediaries and without delays.",
+  
+  "missioncardtitle4": "Personalized referral assistance by a medical team",
+  "missioncarddescription4": "We have a team that offers support, guidance, and assistance throughout the referral process, so you don’t have to waste time during your consultation. Just contact us via WhatsApp!",
+  
+  "missioncardtitle5": "Solutions for Sponsors",
+  "missioncarddescription5": "We provide solutions and work alongside sponsors, CROs, and research centers.",
+  
+  "missioncardtitle6": "Clinical trial outreach",
+  "missioncarddescription6": "We work to increase the visibility and growth of clinical research in Argentina. We help empower the development of investigator physicians.",
+  
+  "missioncardtitle7": "Improving equity in healthcare",
+  "missioncarddescription7": "We want more patients to have access to advanced treatment options regardless of their insurance or place of care, democratizing access to cancer treatments and making the healthcare system more sustainable.",
+  
+  "missioncardtitle8": "Medical education",
+  "missioncarddescription8": "We promote ongoing education and training for oncologists to enhance the quality of care and treatment effectiveness."
+},"QR":{
+	"qr_highlight":"<span>Trialetic</span> has a friendly and easy-to-use interface that you can access from WhatsApp!",
+	"qr_title":"Scan or tap the QR code to get started!",
+	"qr_description":"The search follows specific oncology criteria, such as tumor subtypes, stages, molecular alterations, predictive biomarkers, and treatment options. You can also carefully review the inclusion and exclusion criteria for each clinical trial."
+},
+ "news": {
+    "title": "Featured clinical trials actively recruiting",
+    "newscardtitle1": "A Phase 3, Study of Nivolumab + Relatlimab + Chemotherapy Versus Pembrolizumab + Chemotherapy as First-line Treatment for Participants With Non-squamous (NSQ), Stage IV or Recurrent Non-small Cell Lung Cancer and With Tumor Cell PD-L1 Expression ≥ 1% (RELATIVITY1093)",
+    "newscardtitle2": "Open-Label, Randomized, Phase 3 Trial of Acasunlimab + Pembrolizumab VS Docetaxel in PD-L1 Positive Metastatic NSCLC After Treatment With a PD-1/PD-L1 Inhibitor and Platinum-Containing Chemotherapy (ABBIL1TY NSCLC-06)",
+    "newscardtitle3": "A Phase 2 Open-label Randomized Study of V940 in Combination With BCG Versus BCG Monotherapy in Participants With High-risk Non-muscle Invasive Bladder Cancer  (INTerpath-011)",
+    "ctatitle": "SUBSCRIBE TO OUR WHATSAPP BROADCAST CHANNEL TO KNOW ABOUT NEW CLINICAL TRIALS FOR YOUR PATIENTS",
+	"suscribe_placeholder":"Your mobile number",
+	"suscribe_button":"Suscribe"
+  },
+
+"work":{
+     "title": "Who Works With Us"
+  },
+  "us": {
+    "teamtitle": "Our Team",
+    "teamdescription": "We develop innovative tools using new technologies in the field of oncology to improve our patients' quality of life. We are a multidisciplinary team composed of clinical research oncologists, software developers, coordinators, and regulatory specialists. This helps us understand the real needs of doctors and their patients, allowing us to offer comprehensive and globally scalable solutions."
+  },
+  "projects": {
+    "title": "Our Solutions",
+    "title1": "Health-Oriented CRM",
+    "description1": "We have a CRM specialized in patient management and their study roadmap. This system facilitates detailed tracking of each patient, emphasizing reports and calendars to monitor their studies, ensuring effective communication and constant progress monitoring.",
+    "title2": "ePRO",
+    "description2": "We provide our own ePRO platform where patients report their symptoms through an app designed with a strong UX/UI focus. This attention to design not only improves user experience but also increases adherence to the service.",
+    "title3": "CTMS",
+    "description3": "We offer a Clinical Trial Management System, the essential toolkit to plan and manage your clinical study portfolio. Our application supports the study team from the beginning through enrollment and monitoring, all the way to study closure.",
+	"more":"View more"
+  },
+  "contact": {
+
+    "titletitle": "Contact Us",
+  
+  "form": {
+    "name": "Your Name",
+    "email": "Your Email",
+	 "subject": "Subject",
+    "message": "Your Message",
+    "send": "Send",
+    "sent": "Sent"
+    }
+  }
+}

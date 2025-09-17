@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "news": "Novidades",
+    "contact": "Contacto",
+    "search": "Buscar ensaios Clínicos",
+    "solutions": "Soluções"
+  },
+  "home": {
+    "title": "Encontre o ensaio clínico mais adequado para o seu paciente e encaminhe facilmente para qualquer centro",
+    "t1": "Conectamos médicos oncologistas e pacientes com investigadores de forma simples e efetiva",
+    "t2": "Uma das principais barreiras que explica a baixa participação em ensaios clínicos oncológicos no nosso país e região, reside na limitada conexão entre médicos, investigadores e pacientes."
+  },
+  "features": {
+    "title": "Como funciona o nosso ChatBot?",
+    "description": "O nosso ChatBot é a primeira solução móvel gratuita desenvolvida por e para médicos oncologistas para a busca personalizada de ensaios clínicos e o encaminhamento direto de pacientes aos centros de investigação no Brasil",
+    "featurescardtitle1": "Busca personalizada, eficiente e precisa de ensaios clínicos ativos",
+    "featurescarddescription1": "Facilitamos a busca de ensaios clínicos, fornecendo dados minuciosamente revisados, ordenados e categorizados segundo critérios médicos.",
+    "featurescardtitle2": "Informação validada e atualizada em tempo real sobre centros com recrutamento ativo",
+    "featurescarddescription2": "Validamos e verificamos regularmente o estado de cada ensaio clínico mediante diversas fontes de informação públicas e privadas.",
+    "featurescardtitle3": "Encaminhamento direto de pacientes",
+    "featurescarddescription3": "O nosso sistema oferece ao médico que selecione um ensaio clínico a possibilidade de contactar e encaminhar o paciente ao centro de investigação de forma rápida e sem intermediários, pondo-se em contacto diretamente com os investigadores.",
+    "featurescarddescription4": "Ensaios clínicos de Oncologia <br/> com atualização diária",
+    "featurescarddescription5": "Rácio de Encaminhamento/Randomização",
+    "featurescarddescription6": "Buscas mensais apenas no Brasil",
+    "featurescarddescription7": "Centros na nossa rede de encaminhamento"
+  },
+  "mission": {
+    "title": "A NOSSA MISSÃO",
+    "description": "Potencializar o ecossistema de ensaios clínicos oncológicos no Brasil",
+     "description2": "Democratizar o acesso dos doentes aos ensaios clínicos oncológicos",   
+    "missioncardtitle1": "Rede de oncologistas referentes",
+    "missioncarddescription1": "Graças à nossa rede de oncologistas investigadores sabemos com precisão quais são os centros que estão a recrutar. Desta maneira poderá escolher o centro mais adequado para encaminhar o seu paciente.",
+    "missioncardtitle2": "Uma solução simples",
+    "missioncarddescription2": "Uma plataforma simples e rápida desenvolvida por oncologistas para oncologistas, porque partilhamos as mesmas necessidades.",
+    "missioncardtitle3": "Contacto direto",
+    "missioncarddescription3": "Oferecemos a oportunidade de contactar diretamente com os investigadores de cada centro, sem intermediários e sem demoras.",
+    "missioncardtitle4": "Assistência personalizada no encaminhamento por equipa de médicos",
+    "missioncarddescription4": "Contamos com uma equipa que oferece apoio, orientação e assistência em todo o processo de encaminhamento, para que não tenha que perder tempo na consulta. Só precisa de nos contactar por WhatsApp!",
+    "missioncardtitle5": "Soluções a Patrocinadores",
+    "missioncarddescription5": "Fornecemos soluções e trabalhamos junto com patrocinadores, CROs e centros de investigação.",
+    "missioncardtitle6": "Difusão de ensaios clínicos",
+    "missioncarddescription6": "Trabalhamos para aumentar a difusão e o crescimento da investigação clínica no Brasil. Ajudamos a potencializar o desenvolvimento dos médicos investigadores.",
+    "missioncardtitle7": "Melhorar a equidade no atendimento médico",
+    "missioncarddescription7": "Queremos que mais pacientes tenham acesso a opções de tratamento avançado independentemente da sua cobertura ou local de atendimento, democratizando o acesso a tratamentos oncológicos e tornando mais sustentável o sistema de saúde.",
+    "missioncardtitle8": "Educação médica",
+    "missioncarddescription8": "Promovemos a educação e capacitação contínua dos oncologistas com o objetivo de incrementar a qualidade do atendimento e a efetividade dos tratamentos"
+  },
+  "QR": {
+    "qr_highlight": "<span>Trialetic</span> tem uma interface amigável e fácil de usar à qual pode aceder através do WhatsApp!",
+    "qr_title": "Digitalize ou toque no código QR para começar!",
+    "qr_description": "A busca segue critérios oncológicos específicos, como subtipos tumorais, estádios, alterações moleculares, biomarcadores preditivos e opções de tratamento. Também pode revisar cuidadosamente os critérios de inclusão e exclusão de cada ensaio clínico."
+  },
+  "news": {
+    "title": "Ensaios clínicos destacados com recrutamento ativo",
+    "newscardtitle1": "Estudo de fase 3 de nivolumab + relatlimab + quimioterapia versus pembrolizumab + quimioterapia como tratamento de primeira linha para participantes com cancro do pulmão de células não pequenas não escamoso (NSQ), em estádio IV ou recorrente, com expressão de PD-L1 em células tumorais ≥ 1% (RELATIVITY1093)",
+    "newscardtitle2": "Ensaio aberto, randomizado, de fase 3 de acasunlimab + pembrolizumab vs. docetaxel em CPNM metastático com PD-L1 positivo após tratamento com um inibidor de PD-1/PD-L1 e quimioterapia com platina (ABBIL1TY NSCLC-06)",
+    "newscardtitle3": "Estudo randomizado aberto de fase 2 de V940 em combinação com BCG versus monoterapia com BCG em participantes com cancro da bexiga não músculo invasivo de alto risco (INTerpath-011)",
+    "ctatitle": "SUBSCREVA-SE AO NOSSO CANAL DE DIFUSÃO DO WHATSAPP PARA FICAR A SABER DOS NOVOS ENSAIOS CLÍNICOS PARA OS SEUS PACIENTES",
+    "suscribe_placeholder": "Insira o seu número de telemóvel",
+    "suscribe_button": "Subscrever"
+  },
+  "work": {
+    "title": "Quem Trabalha Connosco"
+  },
+  "us": {
+    "teamtitle": "A nossa equipa",
+    "teamdescription": "Desenvolvemos ferramentas de inovação com novas tecnologias no campo da oncologia com o fim de melhorar a qualidade de vida dos nossos pacientes. Somos uma equipa multidisciplinar formada por médicos oncologistas especializados em investigação clínica, programadores de software, coordenadores e especialistas em regulamentação. Isto ajuda-nos a compreender as necessidades reais dos médicos e dos seus pacientes, permitindo-nos oferecer soluções integrais e de alcance global."
+  },
+  "projects": {
+    "title": "As Nossas Soluções",
+    "title1": "CRM orientado à saúde",
+    "description1": "Contamos com um CRM especializado em pacientes e o seu roteiro de estudos. Este sistema facilita a gestão e acompanhamento detalhado de cada paciente, fazendo destaque em relatórios e calendários para o seguimento dos seus estudos, assegurando uma comunicação efetiva e um monitoramento constante do seu progresso.",
+    "title2": "ePRO",
+    "description2": "Dispomos de uma plataforma própria de ePRO onde os pacientes informam os seus sintomas mediante uma aplicação desenhada com foco em UX/UI. Esta atenção ao design não só melhora a experiência do utilizador, como também incrementa a aderência ao serviço.",
+    "title3": "CTMS",
+    "description3": "Contamos com um Sistema de Gestão de Ensaios Clínicos, o conjunto essencial de ferramentas para planear e gerir a sua carteira de estudos clínicos. A nossa aplicação acompanha a equipa de estudo desde o início, passando pela inscrição e o monitoramento, até ao encerramento do estudo."
+    ,"more":"Consulte mais informações"
+  },
+  "contact": {
+    "titletitle": "Contacte-nos",
+    "form": {
+      "name": "O Seu Nome",
+      "email": "O Seu Email",
+      "message": "A Sua Consulta",
+      "send": "Enviar",
+      "sent": "Enviado"
+    }
+  }
+ }

@@ -1,0 +1,107 @@
+{
+
+  "nav": {
+    
+    "news": "Novedades",
+    "contact": "Contacto",
+    "search": "Buscar ensayos Clinicos",
+    "solutions": "Soluciones"	
+  },
+
+  "home": {
+    "title": " Encuentre el ensayo clínico más adecuado para su paciente y derive fácilmente a cualquier centro",
+    "t1": " Conectamos a médicos oncólogos y pacientes con investigadores de forma simple y efectiva",
+
+    "t2": "Una de las principales barreras que explica la baja participación en ensayos clínicos oncológicos en nuestro país y región, radica en la limitada conexión entre médicos, investigadores y pacientes."
+    
+  },
+  "features": {
+    "title": "Cómo funciona nuestro ChatBot? ",
+	  "description": "Nuestro ChatBot es la primera solución móvil gratuita desarrolada por y para médicos oncólogos para la  búsqueda personalizada de ensayos clínicos y la derivación directa de pacientes a los centros de investigación en Argentina",
+    "featurescardtitle1": "Búsqueda personalizada, eficiente y precisa de ensayos clínicos activos",
+	  "featurescarddescription1": "Facilitamos la búsqueda de ensayos clínicos, brindando datos minuciosamente revisados, ordenados y categorizados según criterios médicos. ",
+	  "featurescardtitle2": "Información validada y actualizada en tiempo real sobre centros con reclutamiento activo",
+	  "featurescarddescription2": "Validamos y verificamos regularmente el estado de cada ensayo clínico mediante diversas fuentes de informacion publicas y privadas.",
+	  "featurescardtitle3": "Derivación directa de pacientes",
+	  "featurescarddescription3": "Nuestro sistema ofrece al médico que seleccione un ensayo clínico la posibilidad de contactar y derivar al paciente al centro de investigación en forma rápida y sin intermediarios, poniéndose en contacto directamente con los investigadores.",
+"featurescarddescription4": "Ensayos clínicos de Oncología <br/> con actualización diaria",
+"featurescarddescription5": "Ratio de <br/> Derivación/Randomización",
+"featurescarddescription6": "Búsquedas mensuales <br/> solo en Argentina",
+"featurescarddescription7": "Centros en nuestra <br/> red de derivación"
+  },
+  "mission": {
+    "title": "NUESTRA MISIÓN",
+    "description": "  Potenciar el ecosistema de ensayos clínicos oncológicos en Argentina",
+	"description2": "Democratizar el acceso de pacientes a ensayos clínicos oncológicos",
+    "missioncardtitle1": "Red de oncólogos referentes",
+    "missioncarddescription1": "Gracias a nuestra red de oncólogos  investigadores sabemos con precisión cuáles son los centros que están reclutando. De esta manera podrá elegir el centro más adecuado para derivar a su paciente.",
+     "missioncarddescription2": "Gracias a nuestra red de oncólogos  investigadores sabemos con precisión cuáles son los centros que están reclutando. De esta manera podrá elegir el centro más adecuado para derivar a su paciente.",
+    
+    "missioncardtitle2": "Una solución simple",
+    "missioncarddescription2": "Una plataforma simple y rápida desarrollada por oncólogos para oncólogos, porque compartimos las mismas necesidades.",
+    
+    "missioncardtitle3": "Contacto directo",
+    "missioncarddescription3": "Ofrecemos la oportunidad de contactar directamente con los investigadores de cada centro,  sin intermediarios y sin demoras.",
+    
+    "missioncardtitle4": "Asistencia pensonalizada en la derivación por equipo de médicos",
+    "missioncarddescription4": "Contamos con un equipo que ofrece apoyo, orientación y asistencia en todo el proceso de derivación, para que no tenga que perder tiempo en la consulta. Solo necesita contactarnos por Whatsapp!",
+    
+    "missioncardtitle5": "Soluciones a Patrocinadores",
+    "missioncarddescription5": "Brindamos soluciones y trabajamos junto a sponsors, CROs y centros de investigación.",
+    
+    "missioncardtitle6": "Difusión de ensayos clínicos",
+    "missioncarddescription6": "Trabajamos para aumentar la difusión y el crecimiento de la investigación clínica en Argentina. Ayudamos a potenciar el desarrollo de los médicos investigadores.",
+    
+    "missioncardtitle7": "Mejorar la equidad en la atención médica",
+    "missioncarddescription7": "Queremos que más pacientes tengan acceso a opciones de tratamiento de avanzada independientemente de su cobertura o lugar de atención, democratizando el acceso a tratamientos oncológicos y haciendo más sustentable el sistema de salud.",
+    
+    "missioncardtitle8": "Educación médica",
+    "missioncarddescription8": "Promovemos la educación y capacitación continua de los oncólogos con el objetivo de incrementar la calidad de la atención y la efectividad de los tratamientos"
+
+  },
+"QR":{
+	"qr_highlight":"<span>Trialetic</span> tiene una interfaz amigable y fácil de usar a la que puedes acceder desde WhatsApp!",
+	"qr_title":"Escanea o toca el código QR para comenzar!",
+	"qr_description":"La búsqueda sigue criterios oncológicos específicos, como subtipos tumorales, estadios, alteraciones moleculares, biomarcadores predictivos y opciones de tratamiento. También puede revisar cuidadosamente los criterios de inclusión y exclusión de cada ensayo clínico."
+},
+  "news": {
+    "title": "Ensayos clínicos destacados con reclutamiento activo",
+    "newscardtitle1": "Estudio de fase 3 de nivolumab + relatlimab + quimioterapia frente a pembrolizumab + quimioterapia como tratamiento de primera línea para participantes con cáncer de pulmón de células no pequeñas no escamoso (NSQ), en estadio IV o recurrente, con expresión de PD-L1 en células tumorales ≥ 1 % (RELATIVITY1093)",
+    "newscardtitle2": "Ensayo abierto, aleatorizado, de fase 3 de acasunlimab + pembrolizumab vs. docetaxel en CPNM metastásico con PD-L1 positivo tras tratamiento con un inhibidor de PD-1/PD-L1 y quimioterapia con platino (ABBIL1TY NSCLC-06)",
+    "newscardtitle3": "Estudio aleatorizado abierto de fase 2 de V940 en combinación con BCG frente a monoterapia con BCG en participantes con cáncer de vejiga no músculo invasivo de alto riesgo (INTerpath-011)",
+    "ctatitle": "SUSCRIBASE A NUESTRO CANAL DE DIFUSIÓN DE WHATSAPP PARA ENTERARSE DE LOS NUEVOS ENSAYOS CLINICOS PARA SUS PACIENTES",
+	"suscribe_placeholder":"Ingresa tu numero de celular",
+	"suscribe_button":"Suscribite"
+  },
+  "work":{
+    "title": "Quiénes Trabajan con Nosotros  "
+  },
+  "us":{
+    "teamtitle": "Nuestro equipo",
+    "teamdescription": "Desarrollamos herramientas de innovación con nuevas tecnologías en el campo de la oncología con el fin de mejorar la calidad de vida de nuestros pacientes. Somos un equipo multidisciplinario formado por médicos oncólogos especializados en investigación clínica, desarrolladores de software, coordinadores y especialistas en regulación. Esto nos ayuda a comprender las necesidades reales de los médicos y sus pacientes, permitiéndonos ofrecer soluciones integrales y de alcance global."
+  },
+  "projects":{
+    "title": "Nuestras Soluciones",
+    "title1": "CRM orientado a la salud",
+    "description1": "Contamos con un CRM especializado en pacientes y su hoja de ruta de estudios. Este sistema facilita la gestión y seguimiento detallado de cada paciente, haciendo hincapié en reportes y calendarios para el seguimiento de sus estudios, asegurando una comunicación efectiva y un monitoreo constante de su progreso.",
+    "title2": "ePRO",
+    "description2": "Disponemos de una plataforma propia de ePRO donde los pacientes informan sus síntomas mediante una aplicación diseñada con un enfoque en UX/UI. Esta atención al diseño no solo mejora la experiencia del usuario, sino que también incrementa la adherencia al servicio.",
+    "title3": "CTMS",
+    "description3": "Contamos con un Sistema de Gestión de Ensayos Clínicos, el conjunto esencial de herramientas para planificar y gestionar tu cartera de estudios clínicos. Nuestra aplicacion acompaña al equipo de estudio desde el inicio, pasando por la inscripción y el monitoreo, hasta el cierre del estudio."
+	,"more":"Ver mas info"
+  },
+  "contact": {
+  
+    
+    "titletitle": "Contactanos",
+
+    "form": {
+      "name": "Tu Nombre",
+      "email": "Tu Email",
+	  "subject": "Tema",
+      "message": "Tu Consulta",
+      "send": "Enviar",
+      "sent": "Enviado"
+    }
+  }
+}
