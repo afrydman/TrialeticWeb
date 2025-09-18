@@ -65,8 +65,6 @@
    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G605X8SG7V"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css?v=1.0.2">
 
@@ -93,6 +91,322 @@
     <!-- Add viewport meta tag for proper responsive rendering -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 
+    <!-- TrialEtic Doc Modal Styles -->
+    <style>
+        /* Modal Overlay */
+        .trialetic-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Modal Content */
+        .trialetic-modal-content {
+            position: relative;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            margin: 10vh auto;
+            padding: 0;
+            border: none;
+            border-radius: 20px;
+            width: 70%;
+            max-width: 450px;
+            max-height: 70vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.4s ease-out;
+        }
+
+        /* Close Button */
+        .trialetic-modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: #6c757d;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+            transition: color 0.3s ease;
+        }
+
+        .trialetic-modal-close:hover {
+            color: #0165f2;
+        }
+
+        /* Modal Header */
+        .trialetic-modal-header {
+            background: linear-gradient(135deg, #0165f2 0%, #003d99 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trialetic-modal-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        .trialetic-modal-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .trialetic-modal-icon i {
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .trialetic-modal-header h2 {
+            margin: 0 0 1rem 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+
+        .trialetic-modal-badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #0165f2;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Modal Body */
+        .trialetic-modal-body {
+            padding: 2rem;
+        }
+
+        .trialetic-modal-body h3 {
+            color: #0165f2;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .trialetic-modal-subtitle {
+            color: #6c757d;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0 0 1.5rem 0;
+        }
+
+        .trialetic-modal-description {
+            color: #495057;
+            line-height: 1.6;
+            margin: 0 0 1.5rem 0;
+            font-size: 1rem;
+        }
+
+        .trialetic-modal-features {
+            margin: 1.5rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin: 0.8rem 0;
+            font-size: 0.95rem;
+        }
+
+        .feature-item i {
+            color: #28a745;
+            margin-right: 0.8rem;
+            font-size: 1rem;
+        }
+
+        .feature-item span {
+            color: #495057;
+            font-weight: 500;
+        }
+
+        /* Modal Footer */
+        .trialetic-modal-footer {
+            padding: 1.5rem 2rem 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .trialetic-modal-btn-primary {
+            flex: 1;
+            min-width: 140px;
+            background: linear-gradient(135deg, #0165f2 0%, #003d99 100%);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .trialetic-modal-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(1, 101, 242, 0.3);
+            color: white;
+            text-decoration: none;
+        }
+
+        .trialetic-modal-btn-secondary {
+            flex: 1;
+            min-width: 140px;
+            background: transparent;
+            color: #6c757d;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid #dee2e6;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .trialetic-modal-btn-secondary:hover {
+            background: #f8f9fa;
+            border-color: #0165f2;
+            color: #0165f2;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .trialetic-modal-content {
+                margin: 8vh auto;
+                width: 75%;
+                max-height: 75vh;
+            }
+
+            .trialetic-modal-header {
+                padding: 1.5rem 1rem;
+            }
+
+            .trialetic-modal-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .trialetic-modal-body {
+                padding: 1.5rem;
+            }
+
+            .trialetic-modal-body h3 {
+                font-size: 1.5rem;
+            }
+
+            .trialetic-modal-subtitle {
+                font-size: 1rem;
+            }
+
+            .trialetic-modal-description {
+                font-size: 0.9rem;
+            }
+
+            .trialetic-modal-footer {
+                padding: 1rem 1.5rem 1.5rem;
+                flex-direction: column;
+            }
+
+            .trialetic-modal-btn-primary,
+            .trialetic-modal-btn-secondary {
+                width: 100%;
+                min-width: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .trialetic-modal-content {
+                margin: 6vh auto;
+                width: 80%;
+                border-radius: 15px;
+            }
+
+            .trialetic-modal-header {
+                padding: 1rem;
+                border-radius: 15px 15px 0 0;
+            }
+
+            .trialetic-modal-header h2 {
+                font-size: 1.2rem;
+            }
+
+            .trialetic-modal-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .trialetic-modal-icon i {
+                font-size: 1.4rem;
+            }
+
+            .trialetic-modal-body {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-height: 600px) {
+            .trialetic-modal-content {
+                margin: 2vh auto;
+                max-height: 90vh;
+            }
+
+            .trialetic-modal-header {
+                padding: 1rem;
+            }
+
+            .trialetic-modal-body {
+                padding: 1rem;
+            }
+        }
+    </style>
 
 </head>
 
@@ -687,6 +1001,109 @@
     <script src="js/gumshoe.polyfills.min.js?v=2345"></script>
     <script src="js/unicons.js?v=2345"></script>
     <script src="js/app.js?v=2346"></script>
+
+    <!-- TrialEtic Doc Modal JavaScript -->
+    <script>
+        // TrialEtic Doc Modal Functions
+        function showTrialeticModal() {
+            const modal = document.getElementById('trialeticDocModal');
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        }
+
+        function closeTrialeticModal() {
+            const modal = document.getElementById('trialeticDocModal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+                
+                // Set localStorage to not show again for 7 days
+                const sevenDaysFromNow = new Date();
+                sevenDaysFromNow.setDate(sevenDaysFromNow.getDate() + 7);
+                localStorage.setItem('trialeticDocModalSeen', sevenDaysFromNow.toISOString());
+            }
+        }
+
+        // Show modal automatically when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show modal after 2 seconds
+            setTimeout(function() {
+                showTrialeticModal();
+            }, 2000);
+        });
+
+        // Close modal when clicking outside or on close button
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('trialeticDocModal');
+            const modalContent = document.querySelector('.trialetic-modal-content');
+            const closeBtn = document.querySelector('.trialetic-modal-close');
+            
+            if (event.target === modal || event.target === closeBtn) {
+                closeTrialeticModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeTrialeticModal();
+            }
+        });
+
+        // Prevent modal content clicks from closing modal
+        document.addEventListener('click', function(event) {
+            const modalContent = document.querySelector('.trialetic-modal-content');
+            if (modalContent && modalContent.contains(event.target)) {
+                event.stopPropagation();
+            }
+        });
+    </script>
+
+    <!-- TrialEtic Doc Announcement Modal -->
+    <div id="trialeticDocModal" class="trialetic-modal">
+        <div class="trialetic-modal-content">
+            <span class="trialetic-modal-close">&times;</span>
+            <div class="trialetic-modal-header">
+                <div class="trialetic-modal-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h2>¡Nueva Solución Disponible!</h2>
+                <div class="trialetic-modal-badge">NOVEDAD</div>
+            </div>
+            <div class="trialetic-modal-body">
+                <h3>TrialEtic Doc</h3>
+                <p class="trialetic-modal-subtitle">Sistema de Gestión Documental con Auditoría CFR 21 Part 11</p>
+                <p class="trialetic-modal-description">
+                    Descubre nuestro nuevo sistema integral de gestión documental diseñado específicamente para cumplir con las regulaciones FDA. Control de versiones avanzado, auditoría completa y gestión de permisos empresarial.
+                </p>
+                <div class="trialetic-modal-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Compliance CFR 21 Part 11</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Control de versiones empresarial</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Auditoría completa y trazabilidad</span>
+                    </div>
+                </div>
+            </div>
+            <div class="trialetic-modal-footer">
+                <a href="trialeticdoc.html" class="trialetic-modal-btn-primary">
+                    <i class="fas fa-arrow-right"></i>
+                    Conocer más
+                </a>
+                <button class="trialetic-modal-btn-secondary" onclick="closeTrialeticModal()">
+                    Ver más tarde
+                </button>
+            </div>
+        </div>
+    </div>
 
     <a href="https://wa.me/+5491136036824" target="_blank" class="whatsapp-button" title="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
